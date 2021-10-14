@@ -8,23 +8,22 @@ public class Calculator {
          operand1 = in.nextInt();
         operand2 = in.nextInt();
         System.out.print("Введите знак желаемого действия: ");
-        char sign = in.next(".").charAt(0);
-
+        String sign = in.next();
         switch (sign) {
-            case '+':
+            case "+":
                 System.out.println("Ответ: " + (operand1 + operand2));
                 break;
-            case '-':
+            case "-":
                 System.out.println("Ответ: " + (operand1 - operand2));
                 break;
-            case '/':
+            case "/":
                 if (operand1==0||operand2==0) {
                     System.out.print("Деление на 0 невозможно");
                 } else {
                     System.out.println("Ответ: " + (operand1 / operand2));
                 }
                 break;
-            case '*':
+            case "*":
                 System.out.println("Ответ: " + (operand1 * operand2));
                 break;
             default:
